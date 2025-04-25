@@ -19,6 +19,7 @@ document.getElementById("generate").addEventListener("click", () => {
                 const hex = document.createElement("p")
                 hex.classList.add("hex")
                 hex.innerText = color.hex.value;
+                colorBox.appendChild(hex);
             });
         })
 

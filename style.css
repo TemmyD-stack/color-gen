@@ -1,0 +1,99 @@
+/* fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Tuffy", sans-serif;
+    background-color: #f1fbfc;
+
+}
+.gen-container{
+    width: 90%;
+    margin: 1em auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.gen-container h1{
+    font-size: 1.5rem;
+    margin: .5em 0;
+    color: #00008b;
+}
+.heading{
+    display: flex;
+    gap: 1em;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#color-picker{
+    width: 40px ;
+    height: 40px;
+    border-radius: 60%;
+    border: none;
+    outline: none;
+}
+label{
+    font-size: 1.5rem;
+    margin: 1em 0;
+}
+select{
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 1em 0;
+    padding: .5em;
+}
+#color-picker:hover{
+    cursor: pointer;
+}
+button{
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #00008b;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: .5em;
+}
+button:hover{
+    
+    background-color: #0000ff;
+}
+.color-scheme {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.color-box {
+    width: 100px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+}
+.hex{
+    display: block;
+    color: #fff;
+   
+}
+@media (min-width: 767px){
+ .heading{
+    width: 100%;
+   justify-content: center;
+ }
+ .color-scheme{
+    width: 100%;
+    margin: 0 auto;
+ }
+}

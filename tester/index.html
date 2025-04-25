@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Picker T</title>
+</head>
+<body>
+    <div class="color-generator">
+        <div class="controls">
+          <input type="color" id="color-picker" value="#3498db" />
+          <select id="mode">
+            <option value="monochrome">Monochrome</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+          </select>
+          <button id="generate">Generate</button>
+        </div>
+      
+        <div id="colors" class="colors-container"></div>
+      </div>
+      
+
+    <script src="main.js"></script>
+</body>
+</html>

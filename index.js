@@ -18,9 +18,19 @@ document.getElementById("generate").addEventListener("click", () => {
                 colorsDiv.appendChild(colorBox);
                 const hex = document.createElement("p")
                 hex.classList.add("hex")
+
+                hex.addEventListener("dblclick", () => {
+                    navigator.clipboard.writeText(color.hex.value).then(() => {
+                        hex.innerText = "Copied!";
+                        setTimeout(() => hex.innerText = color.hex.value, 1000);
+                    });
+                });
+                
                 hex.innerText = color.hex.value;
                 colorBox.appendChild(hex);
+
             });
         })
 
 }) 
+

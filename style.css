@@ -87,6 +87,7 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1em 0;
     width: 100%;
     color: #fff;
     background-color: #00008b;
